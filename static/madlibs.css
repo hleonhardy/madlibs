@@ -1,0 +1,19 @@
+.adj {
+    color: blue;
+    font-family: 'Comic Sans MS';
+}
+
+.noun {
+    color: green;
+}
+
+.pronoun {
+    color: #ff00ff;
+}
+
+.verb {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
