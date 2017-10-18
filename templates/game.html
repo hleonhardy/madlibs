@@ -1,11 +1,10 @@
-<!doctype html>
-<html>
-<head>
-  <title>Our Game</title>
-</head>
-<body>
-    Play our game!<br><br>
-    <form action="/madlib">
+{% extends 'base.html' %}
+
+{% block title %}Our Game{% endblock %}
+
+{% block content %}
+Play our game!<br><br>
+    <form action="/madlib" method="POST">
         Give us a adjective: <input type="text" name="adj"><br>
         Give us a pronoun: <input type="text" name="pro"><br>
         Give us a noun: <input type="text" name="noun"><br>
@@ -14,5 +13,4 @@
         Give us a past-tense verb: <input type="text" name="verb"><br>
         <input type="submit">        
     </form>
-</body>
-</html>
+{% endblock %}

@@ -1,12 +1,14 @@
-<!doctype html>
-<html>
-<head>
-  <title>Your Madlib!</title>
-  <link rel="stylesheet" href="/static/madlibs.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Your Madlib!{% endblock %}
+
+{% block content %}
     <p>
-    Once there was a <span class='adj'>{{adjective}}</span> <span class='noun'>{{noun}}</span>. {{pronoun}} lived in a <span class='adj'>{{adjective2}}</span> <span class='noun'>{{noun2}}</span>. <span class='pronoun'>{{pronoun}}</span> <span class='verb'>{{verb}}</span> everyday. All day.<br>THE END 
+        Once there was a <span class='adj'>{{adjective}}</span> <span class='noun'>{{noun}}</span>. {{pronoun}} lived in a <span class='adj'>{{adjective2}}</span> <span class='noun'>{{noun2}}</span>. <span class='pronoun'>{{pronoun}}</span> <span class='verb'>{{verb}}</span> everyday. All day.<br>THE END 
     </p>
-</body>
-</html>
+{% endblock %}
+
+
+
+
+
